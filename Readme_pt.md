@@ -8,7 +8,7 @@ Siga estas etapas para utilizar o script:
 
 ### 1. Prepare o Seu Arquivo CSV
 
-Certifique-se de ter um arquivo CSV chamado 'your-csv-file.csv' no mesmo diretório do script. O arquivo CSV deve conter pelo menos três colunas nesta ordem: Nome Completo, CPF (Cadastro de Pessoa Física) e E-mail.
+Certifique-se de ter um arquivo CSV chamado 'your-csv-file.csv' no mesmo diretório do script. 
 
 ### 2. Crie um Modelo de PDF
 
@@ -27,7 +27,7 @@ smtp_password = 'suaSenha'
 
 
 ### 4. Personalize o Posicionamento no PDF
-Você pode personalizar o posicionamento do nome do destinatário nos PDFs gerados. O script inclui declarações condicionais para ajustar a posição no eixo X com base no tamanho do nome do destinatário.
+Você pode personalizar o posicionamento do nome do destinatário nos PDFs gerados. O script inclui declarações condicionais para ajustar a posição no eixo X (pode alterar também no eixo Y) com base no tamanho do nome do destinatário, por exemplo.
 
 ### 5. Execute o Script
 Execute o script. Ele lerá dados do arquivo CSV, limpará e formatará os dados, gerará PDFs personalizados e os enviará por e-mail para os destinatários. O script também registrará o status dos e-mails enviados em um arquivo JSON chamado 'log.json'.
