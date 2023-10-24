@@ -8,7 +8,7 @@ Follow these steps to use the script:
 
 ### 1. Prepare Your CSV File
 
-Make sure you have a CSV file named 'your-csv-file.csv' in the same directory as the script. The CSV file should contain at least three columns in this order: Full Name, CPF (Cadastro de Pessoa Física, a Brazilian individual taxpayer registry number), and Email.
+Make sure you have a CSV file named 'your-csv-file.csv' in the same directory as the script. 
 
 ### 2. Create a PDF Template
 
@@ -26,7 +26,7 @@ smtp_password = 'yourPassword'
 ```
 
 ### 4. Customize PDF Placement
-You can customize the placement of the recipient's name within the generated PDFs. The script includes conditional statements to adjust the X-axis position based on the length of the recipient's name.
+You can customize the placement of the recipient's name within the generated PDFs. The script includes conditional statements to adjust the X-axis position (you may use Y-axis as well) based on the length of the recipient's name, for instance.
 
 ### 5. Run the Script
 Execute the script. It will read data from the CSV file, clean and format the data, generate personalized PDFs, and send them as email attachments to the recipients. The script will also log the status of the sent emails in a JSON file named 'log.json.'
